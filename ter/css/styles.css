@@ -1,0 +1,78 @@
+body {
+  background: rgb(221, 225, 235);
+}
+
+
+/* Tarjetas*/
+.card {
+  margin: 2%;
+  text-align: center;
+}
+
+/*Botones*/
+.buttons {
+  text-align: center;
+}
+
+button {
+  margin: 2%;
+}
+
+
+/*Pintar linea sobre celda*/
+td.diagonalRising {
+  background: linear-gradient(135deg, #fff 0%, #fff 49.9%, #000000 50%, #000000 51%, #fff 51.1%, #fff 100%);
+}
+
+td.diagonalFalling {
+  background: linear-gradient(45deg, #fff 0%, #fff 49.9%, #000000 50%, #000000 51%, #fff 51.1%, #fff 100%);
+}
+
+td.vertical {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 48%, rgb(0, 0, 0) 50%, rgba(255, 255, 255, 1) 52%);
+}
+
+td.horizontal {
+  background: linear-gradient(180deg, #fff 0%, #fff 49.9%, #000000 50%, #000000 51%, #fff 51.1%, #fff 100%);
+}
+
+/*Tablas*/
+table {
+  width: 100%;
+  table-layout: auto;
+  text-align: center;
+}
+
+table td:hover {
+  background-color: rgba(0, 0, 0, .075);
+}
+
+td {
+  width: 33.33%;
+  position: relative;
+  width: 100px;
+}
+
+td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+
+td .cell-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 60px;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
